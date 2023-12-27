@@ -23,7 +23,7 @@
                 {#if showText}
                     <div in:fly out:fly class="carousel-caption d-none d-md-block bg-light rounded">
                         <h5 class="text-dark display-6 fs-2 fw-bold">{painting.name}</h5>
-                        <p class="text-dark display-6 fs-5">{painting.dimension}|{painting.material}</p>
+                        <p class="text-dark display-6 fs-5">{painting.dimension} | {painting.material}</p>
                     </div>   
                 {/if}       
             </div>

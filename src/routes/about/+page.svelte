@@ -33,7 +33,7 @@
 <section class="container" in:fly={inTransitionParams} out:fly={outTransitionParams}>
     <h1 class="display-5 text-center m-4">About</h1>
     <img class="rounded d-block mx-auto" src="/120275647_1367693733436663_8663752487400813982_n.jpg" alt="Martin Winkler" />
-    <p class="text-center pt-3">Martin Winkler, born in Germany, lives and works in Kassel, Germany</p>
+    <p class="text-center pt-3">Martin Winkler – born in Halle &#040;Saale&#041;, Germany – lives and works in Kassel, Germany</p>
     <hr />
     <div class="container">
         <h2 class="display-6">Education</h2>

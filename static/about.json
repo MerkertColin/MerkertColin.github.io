@@ -1,18 +1,45 @@
 {
     "education" : [
-        "2014 - 2017 B.A Book and Media Production | HTWK Leipzig, Germany",
-        "2017 - today Studies of fine arts, class Dierk Schmidt | Kunsthochschule Kassel, Germany"
+        {
+            "timeframe": "2017 - today",
+            "info": "Studies of fine arts, class Dierk Schmidt | Kunsthochschule Kassel, Germany"
+        },
+        {
+            "timeframe": "2014 - 2017",
+            "info": "B.A Book and Media Production | HTWK Leipzig, Germany"
+        }
     ],
     "exhibitions": {
         "solo": [],
         "group": [
-            "2023 Mars benefiz exhibition, Frankfurt am Main, Germany",
-            "2022 august exhibition, Kassel, Germany",
-            "2022 Dierk Schmidt class, Kassel, Germany",
-            "2021 \"A Shared Space\", Galeria.Kollektiva, Kassel, Germany",
-            "2019 Dierk Schmidt Klasse, Kassel, Germany",
-            "2018 \"Dear System\", Raum für urbane Experimente, Kassel, Germany",
-            "2016 \"konform\", krudebude, Leipzig, Germany"
+            {
+                "timeframe": "2023",
+                "info": "Mars benefiz exhibition, Frankfurt am Main, Germany"
+            },
+            {
+                "timeframe": "2022",
+                "info": "august exhibition, Kassel, Germany"
+            },
+            {
+                "timeframe": "2022",
+                "info": "Dierk Schmidt class, Kassel, Germany"
+            },
+            {
+                "timeframe": "2021",
+                "info": "\"A Shared Space\", Galeria.Kollektiva, Kassel, Germany"
+            },
+            {
+                "timeframe": "2019",
+                "info": "Dierk Schmidt Klasse, Kassel, Germany"
+            },
+            {
+                "timeframe": "2018",
+                "info": "\"Dear System\", Raum für urbane Experimente, Kassel, Germany"
+            },
+            {
+                "timeframe": "2016",
+                "info": "\"konform\", krudebude, Leipzig, Germany"
+            }
         ]
     }
 }

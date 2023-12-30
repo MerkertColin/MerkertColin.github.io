@@ -7,11 +7,12 @@
 
 <section in:fly={inTransitionParams} out:fly={outTransitionParams}>
     <h1 class="display-5 text-center m-4">Sketchbook</h1>
+    
     <div id="imgCarousel" class="carousel slide h-100 w-100">
         <div class="carousel-inner">
             {#each sketches as sketch, i}
                 <div class="carousel-item {i === 0 ? "active" : ""}">
-                    <img class="d-block mx-auto" src={'/images/sketchbook_drawings/' + sketch} alt={"Sketch Page " + (i + 1)} />
+                    <img  src={'/images/sketchbook_drawings/' + sketch} alt={"Sketch Page " + (i + 1)} />
                 </div>
             {/each}
         </div>
@@ -36,6 +37,7 @@
     .carousel-item {
         width: 100vw;
         height: 80vh;
+        padding: 10px;
     }
 
 </style>

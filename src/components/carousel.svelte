@@ -20,7 +20,7 @@
         {#each paintings as painting, i}
             <div class="carousel-item {i === 0 ? "active" : ""}">
                 <img src={painting.path} alt={painting.name} on:mouseenter={() => showText = false} on:mouseleave={() => showText = true}/>
-                {#if showText}
+                {#if showText && painting.name}
                     <div in:fly out:fly class="carousel-caption d-none d-md-block bg-light rounded">
                         <h5 class="text-dark display-6 fs-2 fw-bold">{painting.name}</h5>
                         <p class="text-dark display-6 fs-5">{painting.dimension} | {painting.material}</p>

@@ -1,7 +1,7 @@
 {
     "education" : [
         {
-            "timeframe": "2017 - today",
+            "timeframe": "2017 - 2024",
             "info": "Studies of fine arts, class Dierk Schmidt | Kunsthochschule Kassel, Germany"
         },
         {
@@ -13,8 +13,12 @@
         "solo": [],
         "group": [
             {
+                "timeframe": "2024",
+                "info": "New Artist Exhibition, The Ballery, Berlin, Germany"
+            },
+            {
                 "timeframe": "2023",
-                "info": "Mars benefiz exhibition, Frankfurt am Main, Germany"
+                "info": "Mars benefit exhibition, Frankfurt am Main, Germany"
             },
             {
                 "timeframe": "2022",
@@ -27,6 +31,10 @@
             {
                 "timeframe": "2021",
                 "info": "\"A Shared Space\", Galeria.Kollektiva, Kassel, Germany"
+            },
+            {
+                "timeframe": "2020",
+                "info": "\"Free Entry\", Kassel, Germany"
             },
             {
                 "timeframe": "2019",

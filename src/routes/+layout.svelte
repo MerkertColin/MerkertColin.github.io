@@ -3,11 +3,11 @@
 
 </script>
 
-<Navbar />
-
 <svelte:head>
     <title>Martin Winkler</title>
 </svelte:head>
+
+<Navbar />
 
 <main>
     <slot></slot>

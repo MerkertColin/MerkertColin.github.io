@@ -18,8 +18,6 @@
         paintings = await res.json();
     })
 
-    
-
     /**
      * @param {string | any} srcPath
      * @param {string | any} imgAlt

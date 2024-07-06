@@ -10,8 +10,17 @@
         }
     ],
     "exhibitions": {
-        "solo": [],
+        "solo": [
+            {
+                "timeframe": "2024",
+                "info": "\"tears for queers\", Ausstellungshalle, Kassel, Germany"
+            }
+        ],
         "group": [
+            {
+                "timeframe": "2024",
+                "info": "Dierk Schmidt Klasse, Kassel, Germany"
+            },
             {
                 "timeframe": "2024",
                 "info": "New Artist Exhibition, The Ballery, Berlin, Germany"

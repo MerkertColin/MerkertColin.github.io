@@ -138,72 +138,105 @@
         "material": "acryl and oil on canvas"
     },
     {
-        "name": "",
-        "path": "/images/work/IMGP4117.jpg"
-    }
-    ,
-    {
-        "name": "",
-        "path": "/images/work/IMGP4123.jpg"
+        "name": "Pfirsich mit Wespen (2024)",
+        "path": "/images/work/IMGP4117.jpg",
+        "dimension": "120x100 cm",
+        "material": "charcoal & acrylic on canvas"
     },
     {
-        "name": "",
-        "path": "/images/work/IMGP4136.jpg"
+        "name": "Lollipop (2024)",
+        "path": "/images/work/IMGP4123.jpg",
+        "dimension": "60x80 cm",
+        "material": "charcoal & gouache on canvas"
     },
     {
-        "name": "",
-        "path": "/images/work/IMGP4142.jpg"
+        "name": "Falling (2024)",
+        "path": "/images/work/IMGP4136.jpg",
+        "dimension": "60x80 cm",
+        "material": "charcoal & gouache on canvas"
     },
     {
-        "name": "",
-        "path": "/images/work/IMGP4147.jpg"
+        "name": "be Marsha’s Darling (2024)",
+        "path": "/images/work/IMGP4142.jpg",
+        "dimension": "60x80 cm",
+        "material": "pencil & gouache on canvas"
     },
     {
-        "name": "",
-        "path": "/images/work/IMGP4151.jpg"
+        "name": "Josef Kohout (2024)",
+        "path": "/images/work/IMGP4147.jpg",
+        "dimension": "60x80 cm",
+        "material": "pencil & acrylic on canvas"
     },
     {
-        "name": "",
-        "path": "/images/work/IMGP4162.jpg"
+        "name": "Dolly de Vil (2024)",
+        "path": "/images/work/IMGP4151.jpg",
+        "dimension": "50x40 cm",
+        "material": "oil pastels & acrylic on canvas"
     },
     {
-        "name": "",
-        "path": "/images/work/IMGP4166.jpg"
+        "name": "Longing",
+        "path": "/images/work/IMGP4162.jpg",
+        "dimension": "40x50 cm",
+        "material": "charcoal & acrylic on canvas"
     },
     {
-        "name": "",
-        "path": "/images/work/IMGP4169.jpg"
+        "name": "13 Elefanten (2024)",
+        "path": "/images/work/IMGP4166.jpg",
+        "dimension": "70x50 cm",
+        "material": "guache on canvas"
     },
     {
-        "name": "",
-        "path": "/images/work/IMGP4083.jpg"
+        "name": "I’m not a girl (2024)",
+        "path": "/images/work/IMGP4169.jpg",
+        "dimension": "40x50 cm",
+        "material": "oil pastels & acrylic on canvas"
     },
     {
-        "name": "",
-        "path": "/images/work/IMGP4175.jpg"
+        "name": "trippin’ (2024)",
+        "path": "/images/work/IMGP4083.jpg",
+        "dimension": "120x100 cm",
+        "material": "oil & acrylic on canvas"
     },
     {
-        "name": "",
-        "path": "/images/work/IMGP4178.jpg"
+        "name": "Ausgang (2024)",
+        "path": "/images/work/IMGP4175.jpg",
+        "dimension": "30x25 cm",
+        "material": "pencil & acrylic on canvas"
     },
     {
-        "name": "",
-        "path": "/images/work/IMGP4199.jpg"
+        "name": "Eingang (2024)",
+        "path": "/images/work/IMGP4178.jpg",
+        "dimension": "60x80 cm",
+        "material": "oil pastel, charcoal and acrylic on canvas"
     },
     {
-        "name": "",
-        "path": "/images/work/IMGP4201.jpg"
+        "name": "monkey and the pearl (2024)",
+        "path": "/images/work/IMGP4199.jpg",
+        "dimension": "10x10 cm",
+        "material": "oil & gouache on canvas"
     },
     {
-        "name": "",
-        "path": "/images/work/IMGP4204.jpg"
+        "name": "Sailors I (2024)",
+        "path": "/images/work/IMGP4201.jpg",
+        "dimension": "100x80 cm",
+        "material": "charcoal on canvas"
     },
     {
-        "name": "",
-        "path": "/images/work/IMGP4211.jpg"
+        "name": "Sailors III (2024)",
+        "path": "/images/work/IMGP4204.jpg",
+        "dimension": "100x80 cm",
+        "material": "charcoal on canvas"
     },
     {
-        "name": "",
-        "path": "/images/work/IMGP4221.jpg"
+        "name": "Sailors II (2024)",
+        "path": "/images/work/IMGP4211.jpg",
+        "dimension": "100x80 cm",
+        "material": "charcoal on canvas"
+    },
+    {
+        "name": "Sailors IV (2024)",
+        "path": "/images/work/IMGP4221.jpg",
+        "dimension": "100x80 cm",
+        "material": "charcoal on canvas"
     }
 ]

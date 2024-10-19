@@ -1,35 +1,5 @@
 [
     {
-        "name": "tears for queers",
-        "path": "/images/work/compressed/Ebene_6.jpg",
-        "dimension": "60x80 cm",
-        "material": "mixed media on canvas"
-    },
-    {
-        "name": "for Patti Smith ",
-        "path": "/images/work/compressed/Ebene_7.jpg",
-        "dimension": "120x100 cm ",
-        "material": "oil & acrylic on canvas"
-    },
-    {
-        "name": "gritos en español",
-        "path": "/images/work/compressed/Ebene_8.jpg",
-        "dimension": "120x100 cm",
-        "material": "oil & acrylic on canvas"
-    },
-    {
-        "name": "disney’s gay cruising forest",
-        "path": "/images/work/compressed/Ebene_9.jpg",
-        "dimension": "200x200 cm",
-        "material": "acrylic on canvas"
-    },
-    {
-        "name": "fetus chimes",
-        "path": "/images/work/compressed/Ebene_1.jpg",
-        "dimension": "24x32 cm",
-        "material": "oil & acrylic on canvas"
-    },
-    {
         "name": "nightmare",
         "path": "/images/work/compressed/Ebene_2.jpg",
         "dimension": "48x70 cm",
@@ -40,12 +10,6 @@
         "path": "/images/work/compressed/Ebene_3.jpg",
         "dimension": "48x70 cm",
         "material": "oil & Pencil on canvas"
-    },
-    {
-        "name": "gay paradise",
-        "path": "/images/work/compressed/Ebene_4.jpg",
-        "dimension": "60x80 cm",
-        "material": "acrylic & urine on canvas"
     },
     {
         "name": "cum",
@@ -238,5 +202,41 @@
         "path": "/images/work/IMGP4221.jpg",
         "dimension": "100x80 cm",
         "material": "charcoal on canvas"
+    },
+    {
+        "name": "tears for queers",
+        "path": "/images/work/compressed/Ebene_6.jpg",
+        "dimension": "60x80 cm",
+        "material": "mixed media on canvas"
+    },
+    {
+        "name": "gay paradise",
+        "path": "/images/work/compressed/Ebene_4.jpg",
+        "dimension": "60x80 cm",
+        "material": "acrylic & urine on canvas"
+    },
+    {
+        "name": "for Patti Smith ",
+        "path": "/images/work/compressed/Ebene_7.jpg",
+        "dimension": "120x100 cm ",
+        "material": "oil & acrylic on canvas"
+    },
+    {
+        "name": "gritos en español",
+        "path": "/images/work/compressed/Ebene_8.jpg",
+        "dimension": "120x100 cm",
+        "material": "oil & acrylic on canvas"
+    },
+    {
+        "name": "disney’s gay cruising forest",
+        "path": "/images/work/compressed/Ebene_9.jpg",
+        "dimension": "200x200 cm",
+        "material": "acrylic on canvas"
+    },
+    {
+        "name": "fetus chimes",
+        "path": "/images/work/compressed/Ebene_1.jpg",
+        "dimension": "24x32 cm",
+        "material": "oil & acrylic on canvas"
     }
 ]

@@ -3,18 +3,17 @@
     import { fly } from "svelte/transition";
 </script>
 
-<section class="d-flex" in:fly={inTransitionParams} out:fly={outTransitionParams}>
-    <h1>MARTIN WINKLER</h1>
+<section class="" in:fly={inTransitionParams} out:fly={outTransitionParams}>
 </section>
 
 <style>
-    h1 {
-        font-size: 10vw;
-        margin: auto
-    }
 
     section {
         width: 100vw;
-        height: 80vh;
+        height: 93.3vh;
+        background-image: url("/images/shop_banner.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
     }
 </style>

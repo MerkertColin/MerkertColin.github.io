@@ -2,6 +2,8 @@
     import { outTransitionParams, inTransitionParams } from '$lib/transitioning';
     import { onMount } from 'svelte';
     import { fly } from 'svelte/transition'
+    import Heading from '../../components/heading.svelte';
+    import SubHeading from '../../components/subHeading.svelte';
 
     /**
      * @typedef {object} AboutInfo
@@ -12,7 +14,8 @@
     /** 
     * @typedef {object} About
     * @property {AboutInfo[]} about.education
-    * @property {AboutInfo[]} about.education
+    * @property {AboutInfo[]} about.residencies
+    * @property {AboutInfo[]} about.publications
     * @property {Object} about.exhibitions
     * @property {AboutInfo[]} about.exhibitions.solo
     * @property {AboutInfo[]} about.exhibitions.group
@@ -24,7 +27,7 @@
     let about;
 
     onMount(async () => {
-        const res = await fetch('/about.json');
+        const res = await fetch('/data/about.json');
         about = await res.json();
     })
 
@@ -36,25 +39,35 @@
     <p class="text-center pt-3">Martin Winkler – born in Halle &#040;Saale&#041;, Germany – lives and works in Kassel, Germany</p>
     <hr />
     <div class="container">
-        <h2 class="display-6">Education</h2>
-        {#if about}
+        <Heading>Education</Heading>
+        <div class="spacing">
+            {#if about}
             {#each about.education as education}
-                <p><b>{education.timeframe}</b> {education.info}</p>
+                <p>{education.timeframe} {education.info}</p>
             {/each}
-            <h2 class="display-6">Exhibitions</h2>
+            <Heading>Residencies</Heading>
+            {#each about.residencies as residency}
+                <p>{residency.timeframe} {residency.info}</p>
+            {/each}
+            <Heading>Publications</Heading>
+            {#each about.publications as publication}
+                <p>{publication.timeframe} {publication.info}</p>
+            {/each}
+            <Heading>Exhibitions</Heading>
             {#if about.exhibitions.solo.length > 0}
-                <h3 class="display-6 fs-4 fw-bold">Solo Exhibitions</h3>
+                <SubHeading>Solo Exhibitions</SubHeading>
                 {#each about.exhibitions.solo as soloExhibition}
-                    <p><b>{soloExhibition.timeframe}</b> {soloExhibition.info}</p>
+                    <p>{soloExhibition.timeframe} {soloExhibition.info}</p>
                 {/each}
             {/if}
             {#if about.exhibitions.group.length > 0}
-                <h3 class="display-6 fs-4 fw-bold">Group Exhibitions</h3>
+                <SubHeading>Group Exhibitions</SubHeading>
                 {#each about.exhibitions.group as groupExhibition}
-                    <p><b>{groupExhibition.timeframe}</b> {groupExhibition.info}</p>
+                    <p>{groupExhibition.timeframe} {groupExhibition.info}</p>
                 {/each}
             {/if}
         {/if}
+        </div>
     </div>
 </section>
 
@@ -63,5 +76,19 @@
         object-fit: contain;
         width: 75%;
         height: 75%;
+    }
+
+    .spacing p {
+        margin-bottom: .2rem;
+    }
+
+    .spacing > :global(h2), :global(h3) {
+        margin-top: 1rem; 
+        margin-bottom: 1rem;
+    }
+
+    :global(body) {
+        font-family: "Open Sans", Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
     }
 </style>

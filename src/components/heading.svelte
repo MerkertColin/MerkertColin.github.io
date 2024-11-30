@@ -1,0 +1,1 @@
+<h2 class="display-6 fs-5"><slot/></h2>

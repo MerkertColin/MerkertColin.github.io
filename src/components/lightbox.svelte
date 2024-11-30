@@ -1,8 +1,9 @@
 <script>
     import { onMount } from "svelte";
+    import ImgCard from "./imgCard.svelte";
 
     /**
-     * @type {string | any[]}
+     * @type {any[]}
      */
     let paintings = [];
     
@@ -14,8 +15,9 @@
     let lightboxVisibility = ''
 
     onMount(async () => {
-        const res = await fetch("/images.json");
+        const res = await fetch("/data/images.json");
         paintings = await res.json();
+        paintings.reverse();
     })
 
     /**
@@ -40,6 +42,14 @@
         document.body.style.overflow = '';
     }
 
+      /**
+     * @param {string | undefined} dimension
+     * @param {string | undefined} material
+     */
+    const getDescription = (dimension, material) => {
+        return dimension && material ? `${dimension} | ${material}` : undefined;
+    }
+
 </script>
 
 <div>
@@ -50,60 +60,44 @@
         <div class="gridcol">
             {#each paintings as painting, i}
                 {#if i % 4 === 0}
-                <div class="card" on:click={() => showLightbox(painting.path, painting.name)}>
-                    <img class="card-img img-thumbnail" title={painting.name} src={painting.path} alt={painting.name} loading="lazy" />
-                    {#if painting.dimension && painting.material && painting.name}
-                        <div class="card-img-overlay float-end">
-                            <h3>{painting.name}</h3>
-                            <p>{painting.dimension} | {painting.material}</p>
-                        </div>
-                    {/if}
-                </div>
+                    <ImgCard 
+                    title={painting.name} 
+                    description={getDescription(painting.dimension, painting.material)} 
+                    imgPath={painting.path}
+                    on:click={() => showLightbox(painting.path, painting.name)}/>
                 {/if}
             {/each}
         </div>
         <div class="gridcol">
             {#each paintings as painting, i}
                 {#if i % 4 === 1}
-                <div class="card" on:click={() => showLightbox(painting.path, painting.name)}>
-                    <img class="card-img img-thumbnail" src={painting.path} alt={painting.name} loading="lazy"/>
-                    {#if painting.dimension && painting.material && painting.name}
-                        <div class="card-img-overlay">
-                            <h3>{painting.name}</h3>
-                            <p>{painting.dimension} | {painting.material}</p>
-                        </div>
-                    {/if}
-                </div>
+                    <ImgCard 
+                    title={painting.name} 
+                    description={getDescription(painting.dimension, painting.material)} 
+                    imgPath={painting.path}
+                    on:click={() => showLightbox(painting.path, painting.name)}/>
                 {/if}
             {/each}
         </div>
         <div class="gridcol">
             {#each paintings as painting, i}
                 {#if i % 4 === 2}
-                <div class="card" on:click={() => showLightbox(painting.path, painting.name)}>
-                    <img class="card-img img-thumbnail" src={painting.path} alt={painting.name} loading="lazy" />
-                    {#if painting.dimension && painting.material && painting.name}
-                        <div class="card-img-overlay">
-                            <h3>{painting.name}</h3>
-                            <p>{painting.dimension} | {painting.material}</p>
-                        </div>
-                    {/if}
-                </div>
+                    <ImgCard 
+                    title={painting.name} 
+                    description={getDescription(painting.dimension, painting.material)} 
+                    imgPath={painting.path}
+                    on:click={() => showLightbox(painting.path, painting.name)}/>
                 {/if}
             {/each}
         </div>
         <div class="gridcol">
             {#each paintings as painting, i}
                 {#if i % 4 === 3}
-                <div class="card" on:click={() => showLightbox(painting.path, painting.name)}>
-                    <img class="card-img img-thumbnail" src={painting.path} alt={painting.name} loading="lazy" />
-                    {#if painting.dimension && painting.material && painting.name}
-                        <div class="card-img-overlay">
-                            <h3>{painting.name}</h3>
-                            <p>{painting.dimension} | {painting.material}</p>
-                        </div>
-                    {/if}
-                </div>
+                    <ImgCard 
+                    title={painting.name} 
+                    description={getDescription(painting.dimension, painting.material)} 
+                    imgPath={painting.path}
+                    on:click={() => showLightbox(painting.path, painting.name)}/>
                 {/if}
             {/each}
         </div>
@@ -189,10 +183,6 @@ img {
     border: none;
     border-radius: none;
     opacity: 0;
-}
-
-.card:hover .card-img-overlay {
-    opacity: 1;
 }
 
 </style>

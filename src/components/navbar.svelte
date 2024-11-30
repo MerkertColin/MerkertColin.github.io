@@ -1,3 +1,7 @@
+<script>
+    import NavItem from "./navItem.svelte";
+
+</script>
 <nav
     class="navbar navbar-expand-sm bg-body-tertiary sticky-top"
     id="topLevelNav"
@@ -17,7 +21,6 @@
         </button>
         <div class="navbar-collapse collapse" id="navbarExpandable">
             <div class="navbar-nav ms-auto">
-                <a class="nav-link" href="news">News</a>
                 <li class="nav-item dropdown">
                     <a
                         class="nav-link dropdown-toggle"
@@ -30,21 +33,22 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a class="dropdown-item" href="paintings"
-                                >Paintings</a
-                            >
+                            <a class="dropdown-item" href="paintings">Paintings</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="sketchbook"
-                                >Sketchbook</a
-                            >
+                            <a class="dropdown-item" href="installations">Installations</a>
                         </li>
-                        <li><a class="dropdown-item" href="video">Video</a></li>
+                        <li>
+                            <a class="dropdown-item" href="sketchbook">Sketchbook</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="video">Video</a>
+                        </li>
                     </ul>
                 </li>
-                <a class="nav-link" href="about">About</a>
-                <a class="nav-link" href="contact">Contact</a>
-                <div class=""></div>
+                <NavItem href="http://www.martinwinklerart.bigcartel.com" target="_blank">Shop</NavItem>
+                <NavItem href="about">About</NavItem>
+                <NavItem href="contact">Contact</NavItem>
             </div>
         </div>
     </div>

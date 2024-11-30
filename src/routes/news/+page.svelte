@@ -9,7 +9,7 @@
     let newsImages = [];
 
     onMount(async () => {
-        const res = await fetch("/news.json");
+        const res = await fetch("/data/news.json");
         newsImages = await res.json();
     })
 
